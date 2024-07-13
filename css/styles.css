@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap);
+
+header {
+  background-image: url("../images/header-background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-size: cover;
+  background-position: bottom;
+  height: 350px;
+}
+h1 {
+  background-color: #ffffff80;
+  padding: 70px;
+  font-family: "Berkshire Swash";
+}
+h2 {
+  padding: 15px;
+  text-align: center;
+}
+
+.all_product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+.card_product {
+  flex-basis: 350px;
+  margin: 0 auto 70px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image_product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+img {
+  display: block;
+}
+p {
+  font-family: "Roboto";
+}
+.image_product {
+  position: relative;
+}
+
+.product_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.image_product:hover .product_overlay {
+  opacity: 1;
+}
+.quick_view {
+  padding: 10px 15px;
+  background-color: #f39c12;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.badge_product {
+  width: 20%;
+  background-color: orange;
+  color: white;
+  align-self: flex-end;
+  border-radius: 5px;
+  margin: -10px -10px -19px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  font-size: 15px;
+}
+.details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product_price {
+  font-size: large;
+  font-weight: 700;
+  align-self: flex-end;
+}
+
+.product_price span {
+  font-family: "Berkshire Swash";
+  font-size: 35px;
+}
+.star {
+  color: #fff700;
+  font-size: 20px;
+}
+.product_options {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+}
+.add_to_cart button {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f39c12;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+}
+.add_to_cart {
+  padding: 0 20px 10px;
+}
+.add_to_cart button:hover {
+  transform: scale(1.02);
+  background-color: #e5af0e;
+}
+.button_size {
+  background-color: #55b7ff;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  width: 20px;
+}
+label {
+  padding-bottom: 5px;
+}
